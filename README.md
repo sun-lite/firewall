@@ -1,17 +1,26 @@
-# Firewall
-# Global IP Blocklist for qBittorrent (P2B Format)
+# Global IP blocklist for qBittorrent
 
-A comprehensive, regularly updated `.p2b` blocklist designed to protect your privacy and security while using qBittorrent. This list aggressively blocks:
+A curated `.p2p` blocklist that prevents unwanted peers from connecting to your torrents.
 
-- 🚫 **All known IP ranges originating from Israel** (including military, government, and commercial ASNs)
-- 🚫 **Over 205,000+ malicious IPs** worldwide, including:
-  - Known surveillance & data-mining networks
-  - Botnet C2 servers
-  - Honeypot and logging peers
-  - Spam & DDoS sources
-  - Government-backed threat actors
+## What it blocks
 
-**File Format:** `.p2b` (PeerBlock binary format) — optimized for qBittorrent's IP filter engine.  
-**Total entries:** Compressed binary representation of **tens of thousands of IP ranges** (equivalent to 200,000+ individual addresses).  
-**Recommended use:** Load this file in qBittorrent's **qbittorrent → Prefernces → Connection → IP Filtering → browse & select GreatFirewallOfChina.p2p → tick the filter path** for automatic, real-time blocking.
+- All IP ranges allocated to Israel (ISP and residential — no cloud/CDN noise)
+- Datacenter and hosting ranges used by scanners and scrapers
+- Anti-P2P monitoring organizations (MediaSentry, BayTSP, etc.)
+- Known botnet infrastructure and malicious actor ranges
 
+## File details
+
+| Property | Value |
+|---|---|
+| Format | `.p2p` — plain text, eMule/qBittorrent compatible |
+| Total ranges | ~202,000+ |
+| Israel ranges | 1,599 (ISP and residential only) |
+| IP source | db-ip.com country lite + curated threat lists |
+
+## How to load in qBittorrent
+
+1. Open qBittorrent → **Preferences → Connection**
+2. Under *IP Filtering*, tick **Filter path**
+3. Browse and select `cleaned.p2p`
+4. Click **OK** — takes effect immediately
