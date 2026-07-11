@@ -16,7 +16,7 @@ A curated `.p2p` blocklist that prevents unwanted peers from connecting to your 
 | Format | `.p2p` — plain text, eMule/qBittorrent compatible |
 | Total ranges | ~202,000+ |
 | Israel ranges | 1,599 (ISP and residential only) |
-| IP source | db-ip.com country lite + curated threat lists |
+| IP source | maxmind.com 's GeoLite Country + curated threat lists |
 
 ## How to load in qBittorrent
 
