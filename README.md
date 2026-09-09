@@ -24,7 +24,6 @@ A compact blocklist targeting all Israel-allocated IP ranges (ISP and residentia
 |---|---|
 | Format | `.p2p` — plain text, eMule/qBittorrent compatible |
 | **block_only_il.p2p** | Israel ranges only (~1,599 ranges) — **actively maintained, updated monthly** |
-| **GreatFirewallOfChina.p2p** | ~202,000+ ranges (comprehensive) — **discontinued, no longer updated** |
 | IP source | maxmind.com's GeoLite Country + curated threat lists (historical for `GreatFirewallOfChina.p2p`) |
 
 ## How to load in qBittorrent
